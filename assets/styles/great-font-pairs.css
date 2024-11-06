@@ -20,6 +20,10 @@ body{
     font-style: normal;
 }
 
+a{
+    text-decoration: none;
+}
+
 .text-ttl{
     font-weight: bold;
     font-size: 13px;
@@ -27,9 +31,12 @@ body{
     color: var(--main);
 }
 
-a{
-    text-decoration: none;
+.content-header{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(35, 37, 54);
 }
+
 
 .text-small{
     color: var(--content-texts);
@@ -88,160 +95,114 @@ nav{
     
 }
 
-.featured-posts-head{
-    background-color: var(--faded-navy);
+
+.creator-ttl{
+    font-weight: bold;
+    color: var(--link-texts);
 }
 
-.head-items{
+.creator-cont{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 3em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+}
+
+.creator-items-cont{
+    width: 500px;
+}
+
+.creator-items{
+    display: flex;
+    flex-direction: column;
     gap: 2em;
 }
 
-@media screen and (max-width: 1120px) {
-    .head-items{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-.head-content{
-    max-width: 500px;
+.creator-img{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     gap: 1em;
 }
 
-.head-img{
-    height: auto;
-    width: 100%;
-    max-width: 500px;
+.page-img-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+
 }
 
-.post-auth-ttl{
-    font-size: 14px;
-    color: rgb(109, 110, 118);
+.page-img{
+    height: 500px;
+    width: 70%;
+}
+
+.page-content-cont{
+    margin: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+}
+
+.page-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+
+.content-ttl{
+    font-size: 1.5em;
     font-weight: bold;
+    color: rgb(35, 37, 54);
 }
 
-.all-posts{
-    margin-top: 3em;
+.content-items{
+    font-size: 15px;
+    color: var(--content-texts);
 }
 
-.posts-ttl{
-    font-size: 2em;
+.content-li{
+    margin: 2em;
+}
+
+li{
+    font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 1em;
-    margin-left: 3em;
+    color: var(--main-texts);
 }
 
-.all-posts-container{
-    width: 100%;
+.next-blog-cont{
+    margin: 5em;
 }
 
-hr{
-    margin-left: 5em;
-}
-
-.all-posts-items{
+.next-blog-items{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5em;
-    align-items: center;
-    padding-left: 5em;
-    margin-bottom: 2em;
 }
-
-
-.all-posts-img-item,
-.all-posts-img-sec{
+.blog-items{
+    width: 300px;
     height: auto;
-    width: 100%;
-    max-width: 400px;
 }
 
-.text-ttl-post{
-    font-weight: bold;
-    font-size: 13px;
-    letter-spacing: 3px;
-    color: var(--link-texts);
+.img-small{
+    height: 200px;
+    width: 300px;
 }
 
-.all-posts-cont{
-    max-width: 550px;
+.img-big{
+    height: 200px;
+    width: 300px;
+}
+
+.blog-content{
     display: flex;
     flex-direction: column;
     gap: 1em;
-}
-
-.category-section{
-    margin-top: 5em;
-}
-
-.cat-ttl{
-    font-weight: bold;
-    font-size: 2em;
-    margin-left: 3em;
-    color: var(--main);
-}
-
-.cat-options{
-    margin-left: 5em;
-    margin-right: 5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 3em;
-}
-
-.cat-options > div{
-    height: 150px;
-    max-width: 200px;
-    border: solid 1px rgb(203, 208, 212);
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    justify-content: center;
-    margin-top: 1em;
-}
-
-.opt-icon{
-    background-color: var(--faded-pink);
-    width: 45px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.opt-ttl{
-    font-weight: bold;
-    font-size: 1.5em;
-    color: var(--main);
-}
-
-.opt-cont{
-    color: var(--content-texts);
-}
-
-.startup{
-    background-color: var(--button);
-}
-
-.opt-icon-startup{
-    background-color: white;
-    width: 45px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
 }
 
 

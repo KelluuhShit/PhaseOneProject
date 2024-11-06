@@ -20,15 +20,15 @@ body{
     font-style: normal;
 }
 
+a{
+    text-decoration: none;
+}
+
 .text-ttl{
     font-weight: bold;
     font-size: 13px;
     letter-spacing: 3px;
     color: var(--main);
-}
-
-a{
-    text-decoration: none;
 }
 
 .text-small{
@@ -37,7 +37,6 @@ a{
 }
 
 .read-more-btn{
-    width: 35%;
     padding: 15px 0px;
     background-color: var(--button);
     border: none;
@@ -46,6 +45,7 @@ a{
     color: var(--main);
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    text-align: center;
 }
 
 nav{
@@ -88,179 +88,16 @@ nav{
     
 }
 
-.featured-posts-head{
-    background-color: var(--faded-navy);
+
+.page-head{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .head-items{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 3em;
-    gap: 2em;
-}
-
-@media screen and (max-width: 1120px) {
-    .head-items{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-.head-content{
     max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.head-img{
-    height: auto;
-    width: 100%;
-    max-width: 500px;
-}
-
-.post-auth-ttl{
-    font-size: 14px;
-    color: rgb(109, 110, 118);
-    font-weight: bold;
-}
-
-.all-posts{
-    margin-top: 3em;
-}
-
-.posts-ttl{
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 1em;
-    margin-left: 3em;
-}
-
-.all-posts-container{
-    width: 100%;
-}
-
-hr{
-    margin-left: 5em;
-}
-
-.all-posts-items{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 5em;
-    align-items: center;
-    padding-left: 5em;
-    margin-bottom: 2em;
-}
-
-
-.all-posts-img-item,
-.all-posts-img-sec{
-    height: auto;
-    width: 100%;
-    max-width: 400px;
-}
-
-.text-ttl-post{
-    font-weight: bold;
-    font-size: 13px;
-    letter-spacing: 3px;
-    color: var(--link-texts);
-}
-
-.all-posts-cont{
-    max-width: 550px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.category-section{
-    margin-top: 5em;
-}
-
-.cat-ttl{
-    font-weight: bold;
-    font-size: 2em;
-    margin-left: 3em;
-    color: var(--main);
-}
-
-.cat-options{
-    margin-left: 5em;
-    margin-right: 5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 3em;
-}
-
-.cat-options > div{
-    height: 150px;
-    max-width: 200px;
-    border: solid 1px rgb(203, 208, 212);
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    justify-content: center;
-    margin-top: 1em;
-}
-
-.opt-icon{
-    background-color: var(--faded-pink);
-    width: 45px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.opt-ttl{
-    font-weight: bold;
-    font-size: 1.5em;
-    color: var(--main);
-}
-
-.opt-cont{
-    color: var(--content-texts);
-}
-
-.startup{
-    background-color: var(--button);
-}
-
-.opt-icon-startup{
-    background-color: white;
-    width: 45px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-
-.join-team{
-    margin-top: 6em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.join-header{
-    font-weight: bold;
-    color: var(--main);
-    font-size: 2em;
-}
-
-.join-cont{
-    width: 400px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,9 +105,49 @@ hr{
     gap: 1.5em;
 }
 
-.join-content{
-    color: rgb(109, 110, 118);
-    font-size: 14px;
+.contact-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-card-items{
+    min-height: 200px;
+    background-color: var(--link-texts);
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-card-items>div{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.inputs-sec{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    gap: 1em;
+}
+
+.inputs-sec>input{
+    padding: 20px 20px;
+}
+
+select{
+    padding: 20px 20px;
+}
+
+textarea{
+    padding: 20px 20px;
 }
 
 footer{
